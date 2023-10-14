@@ -41,8 +41,8 @@ namespace Common
             //PlayerController playerController = Container
             //    .InstantiatePrefabForComponent<PlayerController>(playerPrefab, StartPoint.position, Quaternion.identity, null);
 
-            Container.Bind<PlayerController>()
-                .FromInstance(_playerPrefab.GetComponent<PlayerController>())
+            Container.Bind<PlayerInputs>()
+                .FromInstance(_playerPrefab.GetComponent<PlayerInputs>())
                 .AsSingle();
 
             Container.Bind<PlayerInputs>().FromInstance(_playerPrefab.GetComponent<PlayerInputs>()).AsSingle();

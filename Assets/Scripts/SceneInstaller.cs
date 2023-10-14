@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
-using Cinemachine;
-using Unity.VisualScripting;
+
 
 public class SceneInstaller : MonoInstaller
 {
     public GameObject playerPrefab;
     private GameObject _player;
     public Transform startPoint;
+    public EventManager gameManager;
 
     public override void InstallBindings()
     {
@@ -26,4 +24,14 @@ public class SceneInstaller : MonoInstaller
             .FromInstance(_player.GetComponent<PlayerInputs>())
             .AsSingle();
     }
+
+    //private void BindEventManager()
+    //{
+    //    Container
+    //.Bind<EventManager>()
+    //.FromComponentsOn(gameManager.gameObject)
+    //.AsSingle();
+    //}
+
+
 }

@@ -1,7 +1,5 @@
-using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Zenject;
 
 public class PlayerInputs : MonoBehaviour
 {

@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using TreeEditor;
 using UnityEngine;
-using System;
 using Zenject;
 
 public class TestTouch : MonoBehaviour

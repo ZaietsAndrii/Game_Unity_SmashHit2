@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3615038013950736126}
   - component: {fileID: 3615038013950736125}
-  - component: {fileID: 96323588084680129}
   - component: {fileID: 3497283998049373130}
   m_Layer: 0
   m_Name: Player
@@ -47,18 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53680b8bc23310e45a24d2bb68b7927d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &96323588084680129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3615038013950736127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c7c988b78bae54280e5659338816fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3497283998049373130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +62,7 @@ MonoBehaviour:
   throwPoint: {fileID: 2707427567622327401}
   cannonBallPrefab: {fileID: 2853462186524361058, guid: 3887321172ed0fd4c855ab40e5613b96,
     type: 3}
-  cannonBallForceImpulse: 450
+  cannonBallForceImpulse: 600
 --- !u!1 &3615038015391477710
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3615038015391477710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.19, y: 12, z: -10}
+  m_LocalPosition: {x: -2.45, y: 16.6, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -120,8 +107,8 @@ Camera:
   m_GameObject: {fileID: 3615038015391477710}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.26477388, g: 0.5671556, b: 0.7075472, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -135,7 +122,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 70
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -220,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8209814723990808934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
